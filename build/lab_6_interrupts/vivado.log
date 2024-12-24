@@ -1,0 +1,95 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Nov 16 12:14:55 2024
+# Process ID: 25676
+# Current directory: C:/520lab_projects/lab6 - Copy/build/lab_6_interrupts
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34588 C:\520lab_projects\lab6 - Copy\build\lab_6_interrupts\lab_6_interrupts.xpr
+# Log file: C:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/vivado.log
+# Journal file: C:/520lab_projects/lab6 - Copy/build/lab_6_interrupts\vivado.jou
+# Running On: Madhu, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 14, Host memory: 16831 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.xpr}
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/vitis/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 1825.090 ; gain = 384.578
+update_compile_order -fileset sources_1
+open_bd_design {C:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.srcs/sources_1/bd/system/system.bd}
+Reading block design file <C:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.srcs/sources_1/bd/system/system.bd>...
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.4 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - led_gpio
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - btn_gpio
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps8_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_99M
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - axi_intc_0
+Successfully read diagram <system> from block design file <C:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1946.742 ; gain = 99.961
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xck26-sfvc784-2LV-c
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Project 1-454] Reading design checkpoint 'c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_axi_intc_0_0/system_axi_intc_0_0.dcp' for cell 'system_i/axi_intc_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_led_gpio_0/system_led_gpio_0.dcp' for cell 'system_i/btn_gpio'
+INFO: [Project 1-454] Reading design checkpoint 'c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.dcp' for cell 'system_i/led_gpio'
+INFO: [Project 1-454] Reading design checkpoint 'c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_rst_ps8_0_99M_0/system_rst_ps8_0_99M_0.dcp' for cell 'system_i/rst_ps8_0_99M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_zynq_ultra_ps_e_0_0/system_zynq_ultra_ps_e_0_0.dcp' for cell 'system_i/zynq_ultra_ps_e_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_xbar_0/system_xbar_0.dcp' for cell 'system_i/ps8_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_auto_ds_0/system_auto_ds_0.dcp' for cell 'system_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint 'c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp' for cell 'system_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 3248.590 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_zynq_ultra_ps_e_0_0/system_zynq_ultra_ps_e_0_0.xdc] for cell 'system_i/zynq_ultra_ps_e_0/U0'
+Finished Parsing XDC File [c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_zynq_ultra_ps_e_0_0/system_zynq_ultra_ps_e_0_0.xdc] for cell 'system_i/zynq_ultra_ps_e_0/U0'
+Parsing XDC File [c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/led_gpio/U0'
+Finished Parsing XDC File [c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/led_gpio/U0'
+Parsing XDC File [c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/led_gpio/U0'
+Finished Parsing XDC File [c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/led_gpio/U0'
+Parsing XDC File [c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_led_gpio_0/system_led_gpio_0_board.xdc] for cell 'system_i/btn_gpio/U0'
+Finished Parsing XDC File [c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_led_gpio_0/system_led_gpio_0_board.xdc] for cell 'system_i/btn_gpio/U0'
+Parsing XDC File [c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_led_gpio_0/system_led_gpio_0.xdc] for cell 'system_i/btn_gpio/U0'
+Finished Parsing XDC File [c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_led_gpio_0/system_led_gpio_0.xdc] for cell 'system_i/btn_gpio/U0'
+Parsing XDC File [c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_rst_ps8_0_99M_0/system_rst_ps8_0_99M_0_board.xdc] for cell 'system_i/rst_ps8_0_99M/U0'
+Finished Parsing XDC File [c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_rst_ps8_0_99M_0/system_rst_ps8_0_99M_0_board.xdc] for cell 'system_i/rst_ps8_0_99M/U0'
+Parsing XDC File [c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_rst_ps8_0_99M_0/system_rst_ps8_0_99M_0.xdc] for cell 'system_i/rst_ps8_0_99M/U0'
+Finished Parsing XDC File [c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_rst_ps8_0_99M_0/system_rst_ps8_0_99M_0.xdc] for cell 'system_i/rst_ps8_0_99M/U0'
+Parsing XDC File [c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_axi_intc_0_0/system_axi_intc_0_0.xdc] for cell 'system_i/axi_intc_0/U0'
+Finished Parsing XDC File [c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_axi_intc_0_0/system_axi_intc_0_0.xdc] for cell 'system_i/axi_intc_0/U0'
+Parsing XDC File [C:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.srcs/constrs_1/imports/cnstr/io_map.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'clk_virt_100mhz' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.srcs/constrs_1/imports/cnstr/io_map.xdc:15]
+Finished Parsing XDC File [C:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.srcs/constrs_1/imports/cnstr/io_map.xdc]
+Parsing XDC File [c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_auto_ds_0/system_auto_ds_0_clocks.xdc] for cell 'system_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst'
+Finished Parsing XDC File [c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_auto_ds_0/system_auto_ds_0_clocks.xdc] for cell 'system_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst'
+Parsing XDC File [c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_axi_intc_0_0/system_axi_intc_0_0_clocks.xdc] for cell 'system_i/axi_intc_0/U0'
+Finished Parsing XDC File [c:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.gen/sources_1/bd/system/ip/system_axi_intc_0_0/system_axi_intc_0_0_clocks.xdc] for cell 'system_i/axi_intc_0/U0'
+INFO: [Project 1-1714] 3 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3348.895 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 5 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:27 . Memory (MB): peak = 3738.824 ; gain = 1489.297
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 17 10:46:21 2024...

@@ -1,0 +1,53 @@
+from pynq import Overlay, Interrupt ,GPIO
+from pynq.lib import AxiGPIO
+import asyncio
+from pynq import DefaultIP
+
+async def traffic_light_cycle(lights, pedestrian_req):
+    pedestrian_request = False
+    async def pedestrian_btn_check():
+     nonlocal pedestrian_request 
+     while True:
+          pedestrian_req.read() == 1
+          pedestrian_request=True
+          print("pedestrian pressed the button")
+          await asyncio.sleep(0.1)
+    asyncio.create_task(pedestrian_btn_check())
+    while true:
+        print("red")
+        lights[0].on()
+        lights[1].off()
+        lights[2].off()
+        if pedestrian_request:
+         lights[3].on()
+         print("walk now")
+         await asyncio.sleep(5)
+         lights[3].off()
+        await asyncio.sleep(5)
+        print("yellow")
+        lights[0].off()
+        lights[1].on()
+        lights[2].off()
+        await asyncio.sleep(5)
+        print("green")
+        lights[0].off()
+        lights[1].off()
+        lights[2].on()
+        await asyncio.sleep(5)
+
+async def main():
+    print("loading overlay...!")
+    base = Overlay("top_module.xsa")
+    print("setting Gpio's........")
+    btn_gpio = base.ip_dict['pedestrian_req']
+    led_gpio = base.ip_dict['lights_gpio']
+    lights = AxiGPIO(led_gpio).channel1
+    pedestrian_req =AxiGPIO(btn_gpio).channel1
+    print("reset leds")
+    leds[0:3].off()
+    
+    await traffic_light_cycle(lights,pedestrian_req)
+    
+           
+if __name__ == "__main__":
+    asyncio.run(main())

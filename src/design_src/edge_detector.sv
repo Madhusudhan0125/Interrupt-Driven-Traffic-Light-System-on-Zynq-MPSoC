@@ -1,0 +1,47 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 10/27/2024 11:23:03 AM
+// Design Name: 
+// Module Name: edge_detector
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module edge_detect
+(
+    input  logic clk,
+    input  logic rst_n,
+    input  logic sig,
+    output logic r_edge,
+    output logic f_edge
+);
+
+// signal declaration
+logic delay_reg0;
+
+// delay register
+always_ff @(posedge clk, negedge rst_n)
+    if (~rst_n) begin
+        delay_reg0 <= 1'b0;
+        r_edge     <= 1'b0;
+        f_edge     <= 1'b0;
+    end else begin
+        delay_reg0 <= sig;
+        r_edge     <= ~delay_reg0 & sig;
+        f_edge     <= delay_reg0 & ~sig;
+    end
+
+endmodule

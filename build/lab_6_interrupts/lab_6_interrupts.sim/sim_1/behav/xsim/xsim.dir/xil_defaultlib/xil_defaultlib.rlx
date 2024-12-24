@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
+C:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.srcs/sim_1/imports/sim/debounce_tb.sv,1730053881,systemVerilog,,,,debounce_tb,,uvm,,,,,,
+C:/520lab_projects/lab6 - Copy/src/design_src/debouncer.sv,1730053741,systemVerilog,,C:/520lab_projects/lab6 - Copy/src/design_src/edge_detector.sv,,debouncer,,uvm,,,,,,
+C:/520lab_projects/lab6 - Copy/src/design_src/edge_detector.sv,1730053553,systemVerilog,,C:/520lab_projects/lab6 - Copy/build/lab_6_interrupts/lab_6_interrupts.srcs/sim_1/imports/sim/debounce_tb.sv,,edge_detect,,uvm,,,,,,

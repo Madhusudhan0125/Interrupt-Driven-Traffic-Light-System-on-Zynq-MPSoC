@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../../src/design_src/debouncer.sv" \
+"../../../../../../src/design_src/edge_detector.sv" \
+"../../../../lab_6_interrupts.srcs/sim_1/imports/sim/debounce_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
